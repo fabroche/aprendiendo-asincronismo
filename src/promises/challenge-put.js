@@ -19,7 +19,9 @@ const newData = {
     "title": "PUT Data"
 }
 
-putData(`${API}/products/${productId}`, newData)
+fetch(`${API}/products`)
+    .then(res => res.json())
+    .then(products => putData(`${API}/products/${products[0].id}`, newData))
     .then(res => res.json())
     .then(updatedProduct => console.log(updatedProduct))
     .catch(error => console.log(error))

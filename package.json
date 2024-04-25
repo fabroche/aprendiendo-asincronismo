@@ -6,6 +6,10 @@
   "main": "index.js",
   "scripts": {
     "promise": "node src/promises/index.js",
+    "promise-get": "node src/promises/challenge.js",
+    "promise-post": "node src/promises/challenge-post.js",
+    "promise-put": "node src/promises/challenge-put.js",
+    "promise-delete": "node src/promises/challenge-delete.js",
     "callback": "node src/callback/challenge.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
