@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "generator": "node src/generators/index.js",
     "promise": "node src/promises/index.js",
     "promise-get": "node src/promises/challenge.js",
     "promise-post": "node src/promises/challenge-post.js",
